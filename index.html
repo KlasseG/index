@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>KlasseG</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <h3 class="logo">Klasse<span>G</span></h3>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links disable">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">Reload</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Me<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Alumno</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Nombre</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Apellido</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Mail</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Eliminar cuenta</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="log-sign" style="--i: 1.8s">
+                    <form>
+                        <button id="button-login" class="btn transparent">Jump in</button>
+                        <button id="button-login" class="btn transparent disable">Log Out</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="overlay">
+                <div class="main-card">
+                    <h1>Necesitamos diseñar una página principal xd</h1>
+                    <h3>Hola clase</h3>
+                    <h6>saquen las wamas</h6>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/app.js"></script>
+    <script src="/auth.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import {  } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+        import {  } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_Vr4nGDFH7C2KQadMK8Ei4frHrZpafVY",
+            authDomain: "klasseg-41309.firebaseapp.com",
+            projectId: "klasseg-41309",
+            storageBucket: "klasseg-41309.appspot.com",
+            messagingSenderId: "55791101230",
+            appId: "1:55791101230:web:09aa2a1683f8a7caf5c6bf"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <style>
+        .main-card {
+            padding: 10px;
+            margin: 30px;
+            background-color: white;
+            width: auto;
+            height: 100%;
+        }
+    </style>
+</body>
+
+</html>
